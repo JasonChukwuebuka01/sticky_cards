@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff&family=Edu+TAS+Beginner:wght@600&family=Ubuntu:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: "DynaPuff", cursive;
+  background: conic-gradient(at 0% 0%, snow, white);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  padding: 0;
+}
+
+.container nav {
+  width: 100%;
+  padding: 15px 5px;
+  position: fixed;
+  top: 0;
+  background: #114b5f;
+  z-index: 3;
+}
+
+nav #btn {
+  padding: 10px;
+  cursor: pointer;
+  background: #e4fde1;
+  border: none;
+  outline: none;
+  color: black;
+}
+
+#pen {
+  margin-left: 8px;
+}
+
+@keyframes color {
+  from {
+    color: #000;
+    transform: scale(1);
+  }
+  to {
+    color: white;
+    transform: scale(1.4);
+  }
+}
+
+@keyframes colorr {
+  from {
+    color: #000;
+    transform: scale(1);
+  }
+  to {
+    color: white;
+    transform: scale(1.4);
+  }
+}
+
+#sticky_box {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-item: flex-start;
+  gap: 2px;
+  flex-wrap: wrap;
+  max-height: 90vh;
+  overflow: scroll;
+  margin-top: 80px;
+  padding: 20px 0;
+}
+
+.sticker {
+  width: 200px;
+  height: 200px;
+  padding: 10px 5px;
+  word-wrap: break-word;
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.6), 0px 2px 5px 0 rgba(0, 0, 0, 0.7);
+  border-radius: 2px;
+  border: none;
+  outline: none;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes scaler {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+#stickers h2 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+#popup_box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -55%);
+  width: 250px;
+  height: 200px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  z-index: 2;
+  display: none;
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.6);
+  background: #e4fde1;
+}
+
+.popupbuttons_group {
+  text-align: right;
+  padding: 10px;
+}
+
+#save,
+#delete {
+  margin: 2px;
+  border: 1px solid rgba(17, 76, 95, 0.2);
+  padding: 7px 7px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#delete:hover {
+  box-shadow: 0px 2px 5px 0 rgba(17, 76, 95);
+}
+
+@keyframes shadow {
+  from {
+    box-shadow: 0px 2px 5px 0 rgba(17, 76, 95);
+  }
+  to {
+    box-shadow: 0px 2px 5px 0 rgba(17, 76, 95);
+  }
+}
+
+@keyframes shadows {
+  from {
+    box-shadow: 0px 2px 5px 0 rgba(17, 76, 95);
+  }
+  to {
+    box-shadow: 0px 2px 5px 0 rgba(17, 76, 95);
+  }
+}
+
+#userInput {
+  width: 100%;
+  height: 70%;
+  border: none;
+  box-sizing: border-box;
+  margin-top: 6px;
+  padding: 3px 15px;
+  font-weight: 500;
+  margin: auto;
+  background: inherit;
+}
+
+#userInput:focus {
+  outline: none;
+}
+
+@media (max-width: 480px) {
+  .sticker {
+    width: 48%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
